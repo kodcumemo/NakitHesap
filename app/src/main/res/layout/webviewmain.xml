@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#C2C2C2"
+	android:layout_margin="10dp">
+	
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Web Siteler"
+		android:background="#660600"
+		android:textSize="36sp"
+		android:layout_gravity="top|center"/>
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onClickYemekSepeti"
+		android:background="@drawable/image_yemeksepeti"/>
+
+</LinearLayout>
+

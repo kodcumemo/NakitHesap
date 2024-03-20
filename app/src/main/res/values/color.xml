@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<resources>
+		<color name="pemberenk">#ff4081</color>
+		<color name="mavirenk">#016EF2</color>
+		<color name="yesilrenk">#00F564</color>
+		<color name="sarirenk">#FFEB26</color>
+		<color name="kirmizirenk">#FE0000</color>
+		<color name="turuncurenk">#FA7E00</color>
+	</resources>

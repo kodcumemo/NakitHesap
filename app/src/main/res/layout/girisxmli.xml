@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Soru cevap şeklinde bilgi yarışması. Karşılıklı sorulara en doğru cevap veren kazanir."
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#212121"
+			android:typeface="monospace"
+			android:textStyle="italic"
+			android:textSize="10sp"/>
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="BİL VE KAZAN"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="#FC8500"
+			android:typeface="monospace"
+			android:textStyle="italic"
+			android:textSize="36sp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/girisxmliTextViewAciklama"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="HOŞGELDİNİZ"
+			android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"
+			android:background="#F3F3F3">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#E3ECEF"
+				android:layout_margin="2dp">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Kullanıcı Adınız"/>
+
+				<EditText
+					android:id="@+id/girisxmliEditTextKullaniciAdi"
+					android:layout_width="match_parent"
+					android:inputType="textPersonName"
+					android:layout_height="match_parent"
+					android:ems="10"
+					android:background="#FFFFFF"
+					android:shadowColor="#000000"
+					android:shadowDy="1.0"
+					android:shadowDx="1.0"
+					android:shadowRadius="1.0"
+					android:layout_marginBottom="6dp"
+					android:focusable="true">
+				</EditText>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Şifreniz"/>
+
+				<EditText
+					android:id="@+id/girisxmliEditTextSifre"
+					android:layout_width="match_parent"
+					android:inputType="textPassword"
+					android:layout_height="wrap_content"
+					android:ems="10"
+					android:background="#FFFFFF"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_gravity="center">
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="GİRİŞ"
+					android:layout_marginTop="16dp"
+					android:layout_marginBottom="16dp"
+					android:background="#003BFD"
+					android:textColor="#FFFFFF"
+					android:textSize="24sp"
+					android:onClick="ClickGiris"/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="ÜYE OL"
+					android:background="#DC0C00"
+					android:textColor="#FFFFFF"
+					android:textSize="24sp"
+					android:onClick="ClickUyeOl"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

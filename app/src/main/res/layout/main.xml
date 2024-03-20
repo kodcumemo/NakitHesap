@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:gravity="top|center"
+	android:background="#2E2E2E">
+
+	<Button
+		android:text="Nakit Toplama Uygulamasi"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:onClick="onClickProgramatik"
+		android:textSize="26dp"
+		android:gravity="center"
+		android:background="#191919"
+		android:textColor="#EE00EB"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_margin="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:text="Tarih"
+				android:layout_weight=".7"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:textColorHint="#A789A7"
+				android:hint="Tarih girin"
+				android:layout_height="match_parent"
+				android:layout_weight=".3"
+				android:id="@+id/mainEditText1tarih"
+				android:inputType="numberDecimal"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:text="Ad Soyad"
+				android:layout_weight=".7"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:textColorHint="#A789A7"
+				android:hint="İsim yada Aciklama girin"
+				android:layout_height="match_parent"
+				android:layout_weight=".3"
+				android:id="@+id/mainEditText1isim"
+				android:inputType="textPersonName"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:layout_weight=".7"
+				android:text="Tutar"/>
+
+			<EditText
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:textColorHint="#A789A7"
+				android:hint="Tutar Yazin"
+				android:layout_height="match_parent"
+				android:layout_weight=".3"
+				android:id="@+id/mainEditText1tutar"
+				android:inputType="numberDecimal|numberSigned"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:layout_weight=".7"
+				android:text="Odeme Sekli"/>
+
+			<TextView
+				android:id="@+id/mainTextViewOdemeSekli"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#191919"
+				android:textColor="#EE00EB"
+				android:layout_weight=".7"
+				android:text=""/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_margin="5dp"
+				android:onClick="onClickYemekKarti"
+				android:background="#FFC401"
+				android:textColor="#FFFFFF"
+				android:textSize="15dp"
+				android:text="Yemek K"
+				android:layout_weight=".5"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_margin="5dp"
+				android:onClick="onClickKk"
+				android:background="#FFEE01"
+				android:textColor="#FFFFFF"
+				android:textSize="15dp"
+				android:text="Kredi K"
+				android:layout_weight=".5"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_margin="5dp"
+				android:onClick="onClickOdenmis"
+				android:background="#FFD601"
+				android:textColor="#FFFFFF"
+				android:textSize="15dp"
+				android:text="Odenmis"
+				android:layout_weight=".5"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_margin="5dp"
+				android:onClick="onClickNakit"
+				android:background="#FFC401"
+				android:textColor="#FFFFFF"
+				android:textSize="15dp"
+				android:text="Nakit"
+				android:layout_weight=".5"/>
+
+		</LinearLayout>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:onClick="onClickKaydet"
+			android:background="@drawable/buttonkoseleri"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"
+			android:text="Kaydet"
+			android:layout_weight=".5"/>
+
+		<TextView
+			android:text="Toplam Tutarlar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="12dp"
+			android:gravity="center"
+			android:background="#191919"
+			android:textColor="#EE00EB"
+			android:id="@+id/mainTextView1Goster"/>
+	
+	</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="0.5">
+
+				<TextView
+					android:text="Nakit Tutarlar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="12dp"
+					android:gravity="center"
+					android:background="#191919"
+					android:textColor="#EE00EB"
+					android:id="@+id/mainTextView1nakit"/>
+
+				<ListView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight=".5"
+					android:maxHeight="50dp"
+					android:id="@+id/mainListView1"/>
+
+				<TextView
+					android:text="Kredili Tutarlar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="10dp"
+					android:gravity="center"
+					android:background="#191919"
+					android:textColor="#EE00EB"
+					android:id="@+id/mainTextView1Kredili"/>
+
+				<ListView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight=".5"
+					android:id="@+id/mainListViewkk"/>
+				
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="0.5">
+
+				<TextView
+					android:text="Yemek Cekli Tutarlar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="10dp"
+					android:gravity="center"
+					android:background="#191919"
+					android:textColor="#EE00EB"
+					android:id="@+id/mainTextView1Yk"/>
+
+				<ListView
+					android:id="@+id/mainListViewyk"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight=".5"/>
+
+				<TextView
+					android:text="Odenmis Tutarlar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="10dp"
+					android:gravity="center"
+					android:background="#191919"
+					android:textColor="#EE00EB"
+					android:id="@+id/mainTextView1Odenmis"/>
+
+				<ListView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight=".5"
+					android:id="@+id/mainListViewoa"/>
+				
+			</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_weight="0.9"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom|center">
+
+		<TextView
+			android:text="Hancer Yazilim 2021"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="16dp"
+			android:gravity="center"
+			android:background="#191919"
+			android:textColor="#05B7D7"/>
+
+	</LinearLayout>
+</LinearLayout>
+
+

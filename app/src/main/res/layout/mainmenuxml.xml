@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_margin="10dp">
+
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Ana Menu"
+		android:background="#660600"
+		android:textSize="36sp"
+		android:layout_gravity="top|center"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:gravity="center"
+		android:layout_marginBottom="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Mutabakat"
+			android:onClick="ClickMutabakat"
+			android:background="#00F10F"
+			android:textSize="26sp"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Hesap Defteri"
+			android:background="#0070D9"
+			android:onClick="ClickHesapDefteri"
+			android:textSize="26sp"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Web Sayfalar"
+			android:background="#00FEDA"
+			android:onClick="ClickVv"
+			android:textSize="26sp"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Giriş"
+			android:background="#F9B231"
+			android:onClick="ClickGiris"
+			android:textSize="26sp"/>
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Programatik"
+			android:background="#B0B0B0"
+			android:onClick="ClickProgramatik"
+			android:textSize="26sp"/>
+	</LinearLayout>
+
+</LinearLayout>
+
